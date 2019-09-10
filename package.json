@@ -1,0 +1,23 @@
+{
+  "name": "dns-server",
+  "version": "1.0.0",
+  "description": "local dns server for my small home network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvain121/node-dns-server.git"
+  },
+  "author": "sylvain121",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylvain121/node-dns-server/issues"
+  },
+  "homepage": "https://github.com/sylvain121/node-dns-server#readme",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "ipaddr.js": "^1.9.1"
+  }
+}
