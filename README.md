@@ -4,7 +4,7 @@ Nodejs dns server base en node-named module.
 
 ### build image
 
-````bash
+```bash
 
 sudo docker build -t node-dns-server .
 
