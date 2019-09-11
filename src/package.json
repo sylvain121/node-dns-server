@@ -4,6 +4,7 @@
   "description": "local dns server for my small home network",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "repository": {

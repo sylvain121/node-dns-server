@@ -1,6 +1,6 @@
 # node-dns-server
 
-Nodejs dns server base en node-named module.
+Nodejs dns server base en node-named module (https://github.com/trevoro/node-named).
 
 ### build image
 
