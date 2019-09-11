@@ -4,10 +4,8 @@ WORKDIR /tmp
 RUN mkdir dns-server
 ADD src/ /tmp/dns-server/
 WORKDIR /tmp/dns-server
-COPY index.js /tmp/
-COPY package.json /tmp/
-COPY package-lock.json /tmp/
 
 RUN npm install
-EXPOSE 3000
+EXPOSE 3000/udp
+
 CMD ["node", "index.js"]

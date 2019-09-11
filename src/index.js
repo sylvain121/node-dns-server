@@ -3,7 +3,7 @@ var named = require('./lib/index');
 var server = named.createServer();
 var ttl = 300;
 const port = 3000
-server.listen(port, '127.0.0.1', function () {
+server.listen(port, '0.0.0.0', function () {
     console.log('DNS server started on port '+port);
 });
 
