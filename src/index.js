@@ -18,10 +18,15 @@ server.on('query', function (query) {
         server.send(query);
     } else {
         dns.lookup(domain, null, (err, address, family) => {
-            console.log('address: %j family: IPv%s', address, family);
-            var target = new named.ARecord(address);
-            query.addAnswer(domain, target, ttl);
-            server.send(query);
+            if(address) {
+                console.log('address: %j family: IPv%s', address, family);
+                var target = new named.ARecord(address);
+                query.addAnswer(domain, target, ttl);
+                server.send(query);
+            } else {
+                console.log("domain", domain, "is Unknown");
+            }
+
         });
     }
 
